@@ -1,5 +1,5 @@
 {% set name = "ezgmail" %}
-{% set version = "2022.10.10" %}
+{% set version = "2024.8.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EZGmail-{{ version }}.tar.gz
-  sha256: 7f3e6b288ee17627aaefedcd5d24cf3b88a44116da47a5c4c9047328969e5196
+  sha256: d9a36fca2fec72c8bb19307f3ef1bed7a98ae93bb3ebf87b550b6b837f951c6d
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.4
     - google-api-python-client
-    - oauth2client
+    - google-auth-oauthlib
 
 test:
   imports:
