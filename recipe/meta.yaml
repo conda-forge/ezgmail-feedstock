@@ -1,13 +1,13 @@
 {% set name = "ezgmail" %}
-{% set version = "2024.8.11" %}
+{% set version = "2024.8.13" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EZGmail-{{ version }}.tar.gz
-  sha256: d9a36fca2fec72c8bb19307f3ef1bed7a98ae93bb3ebf87b550b6b837f951c6d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 0a40c92de115290cf64e7f7fd4c59e136c49b89593ff82155bf65edf0dfa2f7e
 
 build:
   noarch: python
