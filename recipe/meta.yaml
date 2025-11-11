@@ -1,5 +1,5 @@
 {% set name = "ezgmail" %}
-{% set version = "2024.12.3" %}
+{% set version = "2025.11.11" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b046476e8b6c633c31fc0f2ed8b28df8956c736fea1094b336ce5a92b37c0a5a
+  sha256: 479fee03caa5fa67cf8d507c4efd1bcccebba68864300abfcf4e52b466e332cd
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
