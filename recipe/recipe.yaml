@@ -32,7 +32,9 @@ tests:
       imports:
         - ezgmail
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: A Pythonic interface to the Gmail API that actually works as of February 2022.
