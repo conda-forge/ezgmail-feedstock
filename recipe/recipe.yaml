@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ezgmail
-  version: "2026.3.6"
+  version: "2026.4.28"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 44a39c28ed8f7d3f941214a91f6ac5aef381799893ca1aa724937b57b2682936
+  sha256: b87092f46c9e99bbdad71c7ebf8e90ebca9968034ce857f568bd3f6478e4e262
 
 build:
   number: 0
